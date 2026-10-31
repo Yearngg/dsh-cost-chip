@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Token 与金额",
+    "description": "在每条回答下方显示本轮 token 与预估金额，在输入框上方显示会话累计；附带 task-token-cost 技能，可按任务出报表并导出 CSV/JSON。"
+  }
+}

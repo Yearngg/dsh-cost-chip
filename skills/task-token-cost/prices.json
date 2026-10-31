@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "currency": "CNY",
+  "unit": 1000000,
+  "note": "DeepSeek 官方价（2026-10 核对）。单位：元 / 百万 tokens。空闲时段为高峰价的一半。",
+  "peak": {
+    "timeZone": "Asia/Shanghai",
+    "weekdays": [1, 2, 3, 4, 5],
+    "ranges": [["09:00", "12:00"], ["14:00", "18:00"]],
+    "holidays": []
+  },
+  "models": {
+    "deepseek-flash": {
+      "aliases": ["deepseek-v4-flash", "deepseek-v4-flash-vision-exp", "deepseek-v4.1-flash", "x-deepseek-v4.1-flash"],
+      "cacheWrite": 0,
+      "peak": { "cacheMiss": 2, "cacheHit": 0.04, "output": 8 },
+      "idle": { "cacheMiss": 1, "cacheHit": 0.02, "output": 4 }
+    },
+    "deepseek-v4-pro": {
+      "aliases": ["deepseek-v4-pro-0813"],
+      "cacheWrite": 0,
+      "peak": { "cacheMiss": 9.0, "cacheHit": 0.30, "output": 27.0 },
+      "idle": { "cacheMiss": 4.5, "cacheHit": 0.15, "output": 13.5 }
+    }
+  },
+  "fallback": "deepseek-flash"
+}

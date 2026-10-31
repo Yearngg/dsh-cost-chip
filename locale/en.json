@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Token & Cost",
+    "description": "This turn's tokens and estimated cost under every completed answer, the session total above the composer, plus a bundled task-token-cost skill for reports and CSV/JSON export."
+  }
+}

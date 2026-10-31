@@ -1,0 +1,59 @@
+{
+  "name": "dsh-cost-chip",
+  "version": "1.0.0",
+  "description": "Per-turn and per-session token usage with peak/idle-aware cost in the DeepSeek Harness Web UI, plus a bundled task-token-cost skill for cross-session reports.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Yearngg",
+  "homepage": "https://github.com/Yearngg/dsh-cost-chip#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yearngg/dsh-cost-chip.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Yearngg/dsh-cost-chip/issues"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "dsh",
+    "deepseek",
+    "deepseek-harness",
+    "token",
+    "cost",
+    "usage",
+    "billing",
+    "skill"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.1 <0.3.0-0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "skills/**",
+    "screenshots.json",
+    "docs/**",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}

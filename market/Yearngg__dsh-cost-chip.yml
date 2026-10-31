@@ -1,0 +1,6 @@
+url: https://github.com/Yearngg/dsh-cost-chip
+name: Yearngg/dsh-cost-chip
+category: usage
+description:
+  en: 'Shows a token count and estimated cost under every completed turn and a session total above the composer. Each turn is priced by its own end time against DeepSeek list prices, with separate peak/idle and cache-hit rates, and hovering breaks the reading into uncached input, cache read and output. Also registers a bundled task-token-cost skill that reports tokens and cost per session across the whole log and exports CSV/JSON. No network access and no files written.'
+  zh: '在每条完成的回答下方显示本轮 token 与预估金额，在输入框上方显示整个会话累计。每轮按它自己的结束时间套用 DeepSeek 峰谷单价，缓存命中与未命中分开计价，悬停可看输入/缓存/输出拆分。另附带 task-token-cost 技能，可跨会话按任务汇总并导出 CSV/JSON。不联网，不写任何文件。'
