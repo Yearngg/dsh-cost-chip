@@ -35,9 +35,18 @@ Zero dependencies, zero network calls, no files written: everything is read from
 
 ## Screenshots
 
-A real screenshot of the two readings is not committed yet — the repository owner is adding
-`docs/chip.png` plus a `screenshots.json` (1–8 repository-relative paths). Those two files are all
-the market needs to show them on this plugin's card.
+The turn line sits at the end of every finished answer — tokens for that turn, and what it cost at that
+turn's own peak/idle rate:
+
+![Per-turn reading under a completed answer](docs/turn-line.png)
+
+The composer line keeps the running total for the whole session, next to the harness's own speed and
+cache-hit pills:
+
+![Session total above the composer](docs/composer-dock.png)
+
+Hovering either line opens the split — uncached input, cache read, output, model, and the rate that was
+applied. The figures above are real readings from a `deepseek-flash` session, priced at the idle rate.
 
 ## Install
 
@@ -110,6 +119,18 @@ MIT
 - 顺带把 `task-token-cost` 技能注册进来，可以让 agent 跨会话出报表、导 CSV/JSON。
 
 零依赖、不联网、不写文件。
+
+**截图**：
+
+每条回答末尾的本轮读数——本轮的 token 和按该轮时段单价算出的金额：
+
+![每条回答下方的本轮金额](docs/turn-line.png)
+
+输入框上方的会话累计，排在宿主自带的 tok/s 和缓存命中率旁边：
+
+![输入框上方的会话累计](docs/composer-dock.png)
+
+指着任一行就能展开拆分（未命中输入 / 缓存命中 / 输出、模型、当时按高峰还是闲时）。上面两张是 `deepseek-flash` 会话里的真实读数，按闲时价计。
 
 **怎么用**：
 
