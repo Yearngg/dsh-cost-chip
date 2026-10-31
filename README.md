@@ -47,6 +47,8 @@ cache-hit pills:
 
 Hovering either line opens the split — uncached input, cache read, output, model, and the rate that was
 applied. The figures above are real readings from a `deepseek-flash` session, priced at the idle rate.
+The `≈` on the session reading means the session is longer than the loaded transcript: the token count
+is still the whole session, while the money covers the turns currently in the window.
 
 ## Install
 
@@ -130,7 +132,7 @@ MIT
 
 ![输入框上方的会话累计](docs/composer-dock.png)
 
-指着任一行就能展开拆分（未命中输入 / 缓存命中 / 输出、模型、当时按高峰还是闲时）。上面两张是 `deepseek-flash` 会话里的真实读数，按闲时价计。
+指着任一行就能展开拆分（未命中输入 / 缓存命中 / 输出、模型、当时按高峰还是闲时）。上面两张是 `deepseek-flash` 会话里的真实读数，按闲时价计。会话行前面的 `≈` 表示这个会话比已加载的对话窗口更长：token 数仍是整个会话的，金额只覆盖窗口里已有的轮次。
 
 **怎么用**：
 
